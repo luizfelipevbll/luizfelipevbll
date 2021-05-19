@@ -1,21 +1,498 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-  </head>
-  <body>
-  <section class="section">
-    <div class="container">
-      <h1 class="title">
-        Hello World
-      </h1>
-      <p class="subtitle">
-        My first website with <strong>Bulma</strong>!
-      </p>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Luiz VBLL</title>
+  <!-- Font Awesome Icons 5.4.1 -->
+  <link rel="stylesheet" href="css/fontawesome541-all.css">
+  <script defer src="js/fontawesome541-all.js"></script>
+  <!-- Bulma Version 0.9.2-->
+  <link rel="stylesheet" href="css/bulma.css" />
+  <!-- AOS Lib -->
+  <link href="css/aos.css" rel="stylesheet">
+  <script src="js/aos.js"></script>
+  <!-- Google Fonts Lib -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar is-black is-fixed-top">
+    <div class="navbar-brand">
+      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#about">
+          <span class="icon">
+            <i class="fas fa-info"></i>
+          </span>
+          <span>About</span>
+        </a>
+        <a class="navbar-item" href="#services">
+          <span class="icon">
+            <i class="fas fa-bars"></i>
+          </span>
+          <span>Services</span>
+        </a>
+        <a class="navbar-item" href="#resume">
+          <span class="icon">
+            <i class="fas fa-file-alt"></i>
+          </span>
+          <span>Resume</span>
+        </a>
+        <!-- <a class="navbar-item" href="#portfolio">
+          <span class="icon">
+            <i class="fas fa-th-list"></i>
+          </span>
+          <span>Portfolio</span>
+        </a> -->
+        <a class="navbar-item" href="#contact">
+          <span class="icon">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span>Contact</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="hero is-black is-fullheight is-fullheight-with-navbar">
+    <div class="hero-body">
+      <div class="container">Hello! I am
+        <h1 class="title is-1">
+          Luiz Lima
+        </h1>
+        <h2 class="subtitle is-3">
+          Software Engineer and Full-Stack Developer
+        </h2>
+      </div>
     </div>
   </section>
-  </body>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <!-- Title -->
+    <div class="section-heading">
+      <h3 class="title is-2">About Me</h3>
+
+      <div class="container">
+        <p>Full stack developer with more than <strong>4 years</strong> of well-rounded experience with a degree in the
+          field of
+          <strong>Software Engineering</strong>, extensive knowledge of modern linux and modern web development
+          techniques and love for <strong>Unix-like and BSD OS</strong>.<br>
+          Looking for an opportunity to work and upgrade, as well as being involved in an organization that
+          believes
+          in gaining a competitive edge and giving back to the community.</p>
+      </div>
+    </div>
+    <br>
+
+    <!-- Profile -->
+    <div class="container">
+      <div class="columns">
+        <!-- Profile picture -->
+        <div class="column">
+          <div class="card" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://source.unsplash.com/featured/?hacking" alt="Placeholder image">
+              </figure>
+            </div>
+          </div>
+        </div>
+        <!-- Profile info-->
+        <div class="column" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+          <div class="card">
+            <div class="card-content has-text-centered">
+              <h3 class="title is-4">Profile</h3>
+
+              <div class="content">
+                <table class="table-profile">
+                  <tr>
+                    <th colspan="1"></th>
+                    <th colspan="2"></th>
+                  </tr>
+                  <tr>
+                    <td>Email:</td>
+                    <td>luiz@vbll.dev</td>
+                  </tr>
+                </table>
+              </div>
+              <br>
+              <div class="buttons has-addons is-centered">
+                <a href="#" class="button is-success is-rounded is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>GitHub</span>
+                </a>
+                <a href="#" class="button is-success is-rounded is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-linkedin"></i>
+                  </span>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="#" class="button is-success is-rounded is-outlined">
+                  <span class="icon">
+                    <i class="fab fa-instagram"></i>
+                  </span>
+                  <span>Instagram</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content has-text-centered">
+              <h3 class="title is-4">Education</h3>
+              <div class="content">
+                <p>
+                  SOFTWARE ENGINEER at <a target="_blank" href="https://www.unicesumar.edu.br/presencial/">Unicesumar -
+                    Maringá, PR, Brazil</a>
+                </p>
+                <p>
+                  ENGLISH LEVEL B2 at <a target="_blank" href="https://www.llinstitute.com/">London Language Institute -
+                    ON, Canada</a>
+                </p>
+                <p>
+                  ADVANCED ENGLISH at <a target="_blank" href="http://www.atclanguageschools.com/">ATC Language
+                    School</a>
+                </p>
+                <p>
+                  HIGH SCHOOL at <a target="_blank" href="https://southwest.gbaps.org/">Green Bay Southwest Highscool -
+                    Grennbay, WI, USA</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <!-- Skills -->
+    <div class="columns" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+      <div class="column is-5 is-offset-3">
+        <div class="card">
+          <div class="card-content skills-content">
+            <h3 class="title is-4 has-text-centered">Technical Skills</h3>
+            <br>
+            <div class="content">
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Devops</strong>
+                      <br>
+                      <progress class="progress is-success" value="95" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Advanced Linux System Administration and Usage</strong>
+                      <br>
+                      <progress class="progress is-success" value="95" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>TSQL/PSQL/SQL, ACID and Relational Database Modeling</strong>
+                      <br>
+                      <progress class="progress is-success" value="95" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Python</strong>
+                      <br>
+                      <progress class="progress is-success" value="95" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>NoSQL Database modeling and sysadmin</strong>
+                      <br>
+                      <progress class="progress is-success" value="95" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Algorithms and Advanced Programming</strong>
+                      <br>
+                      <progress class="progress is-success" value="95" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Containerization, Docker, Docker-Compose</strong>
+                      <br>
+                      <progress class="progress is-success" value="90" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Design Patterns, MVC, SPA, API REST and Microservice Architectural</strong>
+                      <br>
+                      <progress class="progress is-success" value="85" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Cyber Security/Pentest</strong>
+                      <br>
+                      <progress class="progress is-success" value="85" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>PHP</strong>
+                      <br>
+                      <progress class="progress is-success" value="85" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>JavaScript</strong>
+                      <br>
+                      <progress class="progress is-success" value="80" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Rust</strong>
+                      <br>
+                      <progress class="progress is-success" value="65" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+
+  </section>
+
+  <!-- Skills tags -->
+  <div class="tags custom-tags is-centered">
+    <span class="tag is-light">TSQL</span><span class="tag is-light">PSQL</span><span
+      class="tag is-light">VueJS</span><span class="tag is-light">JavaScript</span><span
+      class="tag is-light">HTML5</span><span class="tag is-light">CSS3</span><span
+      class="tag is-light">jQuery</span><span class="tag is-light">Bulma</span><span
+      class="tag is-light">Bootstrap</span><span class="tag is-light">FastAPI</span><span
+      class="tag is-light">Flask</span><span class="tag is-light">ActionScript</span><span class="tag is-light">Django
+      Rest Framework</span><span class="tag is-light">CI/CD</span><span class="tag is-light">Git</span><span
+      class="tag is-light">PHP5/7</span><span class="tag is-light">MSSQL</span><span
+      class="tag is-light">MongoDB</span><span class="tag is-light">MySQL/mariaDB</span><span
+      class="tag is-light">Crontab</span><span class="tag is-light">Jenkins</span><span
+      class="tag is-light">systemD</span><span class="tag is-light">Docker</span><span
+      class="tag is-light">Docker-Compose</span><span class="tag is-light">iptables</span><span
+      class="tag is-light">UFW</span><span class="tag is-light">BSD</span><span class="tag is-light">RHEL</span>
+    <span class="tag is-light">Debian</span><span class="tag is-light">Netcat</span><span
+      class="tag is-light">Metasploit</span><span class="tag is-light">Python</span>
+    <span class="tag is-light">Rust</span><span class="tag is-light">Unix-like</span><span
+      class="tag is-light">SSH</span><span class="tag is-light">GCP</span>
+    <span class="tag is-light">Selenium</span>
+  </div>
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="section-heading">
+      <h3 class="title is-2">Services</h3>
+      <h4 class="subtitle is-5">What can I do for you?</h4>
+    </div>
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <div class="box">
+            <div class="content">
+              <h4 class="title is-5">Front End Web Development</h4>
+              Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
+              Vue.js.
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <div class="content">
+              <h4 class="title is-5">Back End Web Development</h4>
+              Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column">
+          <div class="box">
+            <div class="content">
+              <h4 class="title is-5">Front End Web Development</h4>
+              Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
+              Vue.js.
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <div class="content">
+              <h4 class="title is-5">Back End Web Development</h4>
+              Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- Resume -->
+  <section class="section box" id="resume">
+    <div class="section-heading">
+      <h3 class="title is-2">Resume</h3>
+      <h4 class="subtitle is-5">More about my past</h4>
+      <a href="#" class="button is-success is-rounded is-outlined is-medium">
+        <span class="icon">
+          <i class="fas fa-file-alt"></i>
+        </span>
+        <span>Download My Resume</span>
+      </a>
+    </div>
+  </section>
+
+
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-heading">
+        <h3 class="title is-2">Contact</h3>
+        <h4 class="subtitle is-5">Get in touch</h4>
+      </div>
+      <br>
+
+      <div class="columns">
+        <div class="column is-6 is-offset-3">
+          <div class="box">
+            <div class="field">
+              <label class="label">Name</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="Name">
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control has-icons-left">
+                <input class="input" type="email" placeholder="Email" value="">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-envelope"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Message</label>
+              <div class="control">
+                <textarea class="textarea" placeholder="Your message goes here..."></textarea>
+              </div>
+            </div>
+
+            <!-- <div class="field is-grouped has-text-centered"> -->
+            <div class="control mx-6">
+              <button type="submit" class="button is-success is-large is-fullwidth"><span class="icon">
+                  <i class="fas fa-paper-plane"></i>
+                </span>
+                <span>Submit</span></button>
+            </div>
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="section-heading">
+      <p>
+
+      </p>
+    </div>
+  </footer>
+</body>
+
 </html>
