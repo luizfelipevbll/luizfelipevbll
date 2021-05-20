@@ -431,7 +431,7 @@
   <hr>
 
   <!-- Resume -->
-  <section class="section box" id="resume"  data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+  <section class="section box" id="resume" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
     <div class="section-heading">
       <h3 class="title is-2">Resume</h3>
       <h4 class="subtitle is-5">More about my past</h4>
@@ -446,7 +446,7 @@
   </section>
 
   <!-- Languages -->
-  <section class="section box" id="languages-section"  data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+  <section class="section box" id="languages-section" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
     <div class="section-heading">
       <br>
       <h3 class="title is-2">Languages</h3>
@@ -480,38 +480,32 @@
           </tr>
         </table>
       </div>
-      
-      
-        
+
+
+
       </span>
       <p></p>
     </div>
   </section>
 
-  
+
   <!-- Contact -->
-  <section class="section" id="contact"  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+  <section class="section" id="contact" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
     <div class="container">
       <div class="section-heading">
         <h3 class="title is-2">Contact</h3>
         <h4 class="subtitle is-5">Get in touch</h4>
       </div>
       <br>
-      <form action="#">
+      <form id="my-form" action="https://formspree.io/f/mknkjevw" method="POST">
         <div class="columns">
           <div class="column is-6 is-offset-3">
             <div class="box">
-              <div class="field">
-                <label class="label">Name</label>
-                <div class="control">
-                  <input class="input" type="text" placeholder="Name">
-                </div>
-              </div>
 
               <div class="field">
                 <label class="label">Email</label>
                 <div class="control has-icons-left">
-                  <input class="input" type="email" placeholder="Email" value="">
+                  <input type="email" name="_replyto" class="input" required>
                   <span class="icon is-small is-left">
                     <i class="fas fa-envelope"></i>
                   </span>
@@ -521,12 +515,13 @@
               <div class="field">
                 <label class="label">Message</label>
                 <div class="control">
-                  <textarea class="textarea" placeholder="Your message goes here..."></textarea>
+                  <textarea class="textarea" placeholder="Your message goes here..." name="message"></textarea>
                 </div>
               </div>
 
               <div class="control mx-6">
-                <button type="submit" class="button is-success is-large is-fullwidth"><span class="icon">
+                <button id="form-button" type="submit" class="button is-success is-large is-fullwidth"><span
+                    class="icon">
                     <i class="fas fa-paper-plane"></i>
                   </span>
                   <span>Submit</span></button>
@@ -538,16 +533,60 @@
     </div>
   </section>
 
+  <div id="email_alert" class="is-hidden">
+    <div class="container">
+      <div class="notification is-success is-light alert_footer" style="position: fixed;">
+        <button class="delete" onclick="document.getElementById('email_alert').setAttribute('class', 'is-hidden')"></button>
+        Email successfully sent! 
+      </div>
+    </div>
+  </div>
+
+  <div id="email_error" class="is-hidden">
+    <div class="container">
+      <div class="notification is-warning is-light alert_footer" style="position: fixed;">
+        <button class="delete" onclick="document.getElementById('email_error').setAttribute('class', 'is-hidden')"></button>
+        Email <strong>not</strong> sent!<br>
+        Please try another contact method.
+      </div>
+    </div>
+  </div>
+
   <script>
     AOS.init();
+
+    var form = document.getElementById("my-form");
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        window.scrollTo(0, 0);
+        form.reset();
+        var button = document.getElementById("form-button");
+        var email_alert = document.getElementById("email_alert");
+        button.setAttribute("disabled", true);
+        button.setAttribute("title", "Email already sent.");
+        email_alert.setAttribute("class", "")
+      }).catch(error => {
+        window.scrollTo(0, 0);
+        var email_error = document.getElementById("email_error");
+        email_error.setAttribute("class", "")
+      });
+    }
+    form.addEventListener("submit", handleSubmit);
+
   </script>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="section-heading">
-      <p>
-
-      </p>
+      <p></p>
     </div>
   </footer>
 </body>
