@@ -13,3 +13,5 @@ body {
 .invalid_link {
   color: grey;
 }
+
+.mySlides {display:none}

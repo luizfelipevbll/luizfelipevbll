@@ -111,14 +111,22 @@
         <div class="column">
           <div class="card" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
             <div class="card-image">
-              <figure class="image is-4by3">
-                <img
-                  src="https://images.unsplash.com/photo-1529101091764-c3526daf38fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218fHx8fHx8fHwxNjIxNDU2NDk0&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit"
-                  alt="Placeholder image">
+              <figure class="image is-5by4">
+                <img class="mySlides" src="assets/img/pic001.jpeg" alt="Code">
+                <img class="mySlides" src="assets/img/me000.jpeg" alt="My photo">
+                <img class="mySlides" src="assets/img/me001.jpeg" alt="My photo">
+                <img class="mySlides" src="assets/img/me002.jpeg" alt="My photo">
+                <img class="mySlides" src="assets/img/me003.jpeg" alt="My photo">
               </figure>
+              
+              </div>
+              <div class="has-text-centered">
+                <button class="button is-small is-rounded" onclick="plusDivs(-1)">&#10094; Prev</button>
+                <button class="button is-small is-rounded" onclick="plusDivs(1)">Next &#10095;</button>
             </div>
           </div>
         </div>
+
         <!-- Profile info-->
         <div class="column" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
           <div class="card">
@@ -173,8 +181,8 @@
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                     </span>
-                  </a> 
-                  BACHELOR OF SOFTWARE ENGINEER at 
+                  </a>
+                  BACHELOR OF SOFTWARE ENGINEER at
                   <a target="_blank" href="https://www.unicesumar.edu.br/presencial/">
                     Unicesumar - Maringá, PR, Brazil
                   </a>
@@ -184,8 +192,8 @@
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                     </span>
-                  </a> 
-                    ENGLISH AS A SECOND LANGUAGE at 
+                  </a>
+                  ENGLISH AS A SECOND LANGUAGE at
                   <a target="_blank" href="https://www.llinstitute.com/">
                     London Language Institute -
                     ON, Canada
@@ -197,7 +205,7 @@
                       <i class="fas fa-file-pdf"></i>
                     </span>
                   </a>
-                    ENGLISH LANGUAGE STUDIES at 
+                  ENGLISH LANGUAGE STUDIES at
                   <a target="_blank" href="http://www.atclanguageschools.com/">ATC Language
                     School - Bray, County Wicklow, Ireland
                   </a>
@@ -207,7 +215,7 @@
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                     </span>
-                  </a> 
+                  </a>
                   HIGH SCHOOL at
                   <a target="_blank" href="https://southwest.gbaps.org/">
                     Green Bay Southwest Highscool - Green Bay, WI, USA
@@ -220,6 +228,7 @@
       </div>
     </div>
     <hr>
+
     <!-- Skills -->
     <div class="columns" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
       <div class="column is-5 is-offset-3">
@@ -379,8 +388,6 @@
       </div>
     </div>
     <hr>
-
-
   </section>
 
   <!-- Skills tags -->
@@ -469,7 +476,7 @@
         <span class="icon">
           <i class="fas fa-file-alt"></i>
         </span>
-        <span title="PT-BR">Download My Resume</span>
+        <span title="PT-BR Version">Download My Resume</span>
       </a>
     </div>
   </section>
@@ -509,9 +516,6 @@
           </tr>
         </table>
       </div>
-
-
-
       </span>
       <p></p>
     </div>
@@ -565,8 +569,9 @@
   <div id="email_alert" class="is-hidden">
     <div class="container">
       <div class="notification is-success is-light alert_footer" style="position: fixed;">
-        <button class="delete" onclick="document.getElementById('email_alert').setAttribute('class', 'is-hidden')"></button>
-        Email successfully sent! 
+        <button class="delete"
+          onclick="document.getElementById('email_alert').setAttribute('class', 'is-hidden')"></button>
+        Email successfully sent!
       </div>
     </div>
   </div>
@@ -574,7 +579,8 @@
   <div id="email_error" class="is-hidden">
     <div class="container">
       <div class="notification is-warning is-light alert_footer" style="position: fixed;">
-        <button class="delete" onclick="document.getElementById('email_error').setAttribute('class', 'is-hidden')"></button>
+        <button class="delete"
+          onclick="document.getElementById('email_error').setAttribute('class', 'is-hidden')"></button>
         Email <strong>not</strong> sent!<br>
         Please try another contact method.
       </div>
@@ -610,6 +616,37 @@
     }
     form.addEventListener("submit", handleSubmit);
 
+    // slideshow
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = x.length
+      }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-white", "");
+      }
+      x[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " w3-white";
+    }
   </script>
 
   <!-- Footer -->
