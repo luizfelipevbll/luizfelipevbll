@@ -118,7 +118,6 @@
                 <img class="mySlides" src="assets/img/pic001.jpeg" alt="Code">
                 <img class="mySlides" src="assets/img/me001.jpeg" alt="My photo">
               </figure>
-              
               </div>
               <div class="has-text-centered">
                 <button class="button is-small is-rounded" onclick="plusDivs(-1)">&#10094; Prev</button>
@@ -415,15 +414,6 @@
 
     <div class="container">
       <div class="columns">
-<!--         <div class="column" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
-          <div class="box">
-            <div class="content">
-              <h4 class="title is-5">Front End Web Development</h4>
-              Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
-              Vue.js.
-            </div>
-          </div>
-        </div> -->
         <div class="column" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
           <div class="box">
             <div class="content">
@@ -610,10 +600,6 @@
     }
     form.addEventListener("submit", handleSubmit);
 
-    // slideshow
-    var slideIndex = 1;
-    showDivs(slideIndex);
-
     function plusDivs(n) {
       showDivs(slideIndex += n);
     }
@@ -625,7 +611,6 @@
     function showDivs(n) {
       var i;
       var x = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("demo");
       if (n > x.length) {
         slideIndex = 1
       }
@@ -635,12 +620,13 @@
       for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
       }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" w3-white", "");
-      }
       x[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " w3-white";
     }
+
+    // slideshow
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
   </script>
 
   <!-- Footer -->
