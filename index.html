@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Luiz Lima</title>
+  <link rel="manifest" href="manifest.json" />
   <meta name="description" content="I'm a Software Developer with more than 5 years of well-rounded experience with a degree in the field of Software Engineering, I have extensive knowledge of linux and modern web development techniques foccusing on security. I'm passionate about Linux, Algorithms and Logic." />
   <meta property="og:title" content="Luiz Lima Software Engineer" />
   <meta property="og:url" content="https://www.lcorp.dev/" />
@@ -627,6 +628,14 @@
     var slideIndex = 1;
     showDivs(slideIndex);
 
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function() {
+        navigator.serviceWorker
+          .register("/js/serviceWorker.js")
+          .then(res => console.log("service worker registered"))
+          .catch(err => console.log("service worker not registered", err))
+      })
+    }
   </script>
 
   <!-- Footer -->

@@ -1,0 +1,25 @@
+{
+    "background_color": "#ffffff",
+    "description": "Hello my name is Luiz Lima and this is my resume.",
+    "dir": "ltr",
+    "display": "standalone",
+    "name": "LCorp",
+    "orientation": "any",
+    "scope": "/",
+    "short_name": "LCorp",
+    "start_url": "/",
+    "theme_color": "#ffffff",
+    "categories": [],
+    "screenshots": [],
+    "icons": [{
+            "src": "https://raw.githubusercontent.com/luizfelipevbll/luizfelipevbll/master/assets/img/logo.jpg",
+            "type": "image/jpeg",
+            "sizes": "269x168"
+        },
+        {
+            "src": "/favicon.ico",
+            "type": "image/x-icon"
+        }
+    ],
+    "shortcuts": []
+}
