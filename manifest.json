@@ -1,5 +1,5 @@
 {
-    "background_color": "#ffffff",
+    "background_color": "#FFFFFF",
     "description": "Hello my name is Luiz Lima and this is my resume.",
     "dir": "ltr",
     "display": "standalone",
@@ -8,46 +8,47 @@
     "scope": "/",
     "short_name": "LCorp",
     "start_url": "https://lcorp.dev",
-    "theme_color": "#ffffff",
+    "theme_color": "#FFFFFF",
     "categories": [],
     "screenshots": [],
     "icons": [
         {
             "src": "https://raw.githubusercontent.com/luizfelipevbll/luizfelipevbll/master/assets/img/maskable_icon/maskable_icon_x48.png",
-            "type": "image/jpeg",
+            "type": "image/png",
             "sizes": "48x48"
         },
         {
             "src": "https://raw.githubusercontent.com/luizfelipevbll/luizfelipevbll/master/assets/img/maskable_icon/maskable_icon_x72.png",
-            "type": "image/jpeg",
+            "type": "image/png",
             "sizes": "72x72"
         },
         {
             "src": "https://raw.githubusercontent.com/luizfelipevbll/luizfelipevbll/master/assets/img/maskable_icon/maskable_icon_x96.png",
-            "type": "image/jpeg",
+            "type": "image/png",
             "sizes": "96x96"
         },
         {
             "src": "https://raw.githubusercontent.com/luizfelipevbll/luizfelipevbll/master/assets/img/maskable_icon/maskable_icon_x128.png",
-            "type": "image/jpeg",
+            "type": "image/png",
             "sizes": "128x128",
             "purpose": "any maskable"
         },
         {
             "src": "https://raw.githubusercontent.com/luizfelipevbll/luizfelipevbll/master/assets/img/maskable_icon/maskable_icon_x192.png",
-            "type": "image/jpeg",
+            "type": "image/png",
             "sizes": "192x192"
         },
         {
             "src": "https://raw.githubusercontent.com/luizfelipevbll/luizfelipevbll/master/assets/img/maskable_icon/maskable_icon_x384.png",
-            "type": "image/jpeg",
+            "type": "image/png",
             "sizes": "384x384",
             "purpose": "any maskable"
         },
         {
             "src": "https://raw.githubusercontent.com/luizfelipevbll/luizfelipevbll/master/assets/img/maskable_icon/maskable_icon_x512.png",
-            "type": "image/jpeg",
-            "sizes": "512x512"
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any"
         },
         {
             "src": "https://raw.githubusercontent.com/luizfelipevbll/luizfelipevbll/master/assets/img/logo.jpg",
