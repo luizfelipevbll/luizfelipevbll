@@ -47,20 +47,6 @@
             "src": "https://raw.githubusercontent.com/luizfelipevbll/luizfelipevbll/master/assets/img/maskable_icon/maskable_icon_x512.png",
             "type": "image/png",
             "sizes": "512x512"
-        },
-        {
-            "src": "https://raw.githubusercontent.com/luizfelipevbll/luizfelipevbll/master/assets/img/maskable_icon/maskable_icon_x865.png",
-            "type": "image/png",
-            "sizes": "865x865"
-        },
-        {
-            "src": "https://raw.githubusercontent.com/luizfelipevbll/luizfelipevbll/master/assets/img/logo.jpg",
-            "type": "image/jpeg",
-            "sizes": "269x168"
-        },
-        {
-            "src": "/favicon.ico",
-            "type": "image/x-icon"
         }
     ],
     "shortcuts": []
