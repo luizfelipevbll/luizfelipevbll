@@ -7,7 +7,7 @@
     "orientation": "any",
     "scope": "/",
     "short_name": "LCorp",
-    "start_url": "https://lcorp.dev",
+    "start_url": "/",
     "theme_color": "#FFFFFF",
     "categories": [],
     "screenshots": [],
