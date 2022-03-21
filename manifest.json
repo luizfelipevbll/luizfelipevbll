@@ -36,7 +36,8 @@
         {
             "src": "https://raw.githubusercontent.com/luizfelipevbll/luizfelipevbll/master/assets/img/maskable_icon/maskable_icon_x192.png",
             "type": "image/png",
-            "sizes": "192x192"
+            "sizes": "192x192",
+            "purpose": "any maskable"
         },
         {
             "src": "https://raw.githubusercontent.com/luizfelipevbll/luizfelipevbll/master/assets/img/maskable_icon/maskable_icon_x384.png",
