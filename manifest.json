@@ -37,7 +37,7 @@
             "src": "https://raw.githubusercontent.com/luizfelipevbll/luizfelipevbll/master/assets/img/maskable_icon/maskable_icon_x192.png",
             "type": "image/png",
             "sizes": "192x192",
-            "purpose": "any maskable"
+            "purpose": "any"
         },
         {
             "src": "https://raw.githubusercontent.com/luizfelipevbll/luizfelipevbll/master/assets/img/maskable_icon/maskable_icon_x384.png",
@@ -49,7 +49,7 @@
             "src": "https://raw.githubusercontent.com/luizfelipevbll/luizfelipevbll/master/assets/img/maskable_icon/maskable_icon_x512.png",
             "type": "image/png",
             "sizes": "512x512",
-            "purpose": "any"
+            "purpose": "any maskable"
         },
         {
             "src": "https://raw.githubusercontent.com/luizfelipevbll/luizfelipevbll/master/assets/img/logo.jpg",
